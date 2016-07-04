@@ -12,11 +12,11 @@ cocos2d-x Label에 타이핑 효과를 낼 수 있는 코드입니다. cocos2d-x
 3. 코드가 매우 간략하므로, 사용자가 원하는 클래스에 붙여 사용할 수 있습니다.
 
 ## Example
-<pre>
+```C++
     auto txtLabel = Label::createWithTTF("", "fonts/Marker Felt.ttf", 24);
     txtLabel->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     txtLabel->setPosition(visibleSize * 0.5f);
     txtLabel->setColor(Color3B::WHITE);
     LabelTypingEffect::typeMessage(txtLabel, "Hello World! This is example.");
     this->addChild(txtLabel, 1);
-</pre>
+```
